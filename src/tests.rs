@@ -4,6 +4,11 @@ mod tests {
     use xcap::Monitor;
 
     #[test]
+    fn test_screen_snip() {
+        crate::get_screen_snip("screenshot.png".to_string());
+    }
+
+    #[test]
     fn test_smth() {
         let monitors = Monitor::all().unwrap();
         let monitor = &monitors[0];
