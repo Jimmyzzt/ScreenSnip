@@ -8,6 +8,20 @@ mod tests;
 
 use app::App;
 
+/// Captures a screenshot interactively (with region selection).
+///
+/// Will create a new fullsize window overlaying the entire screen, where the user can select a region to capture.
+///
+/// # Arguments
+///
+/// * `save_path` - A `String` that specifies the path where the screenshot will be saved.
+///
+/// # Example
+///
+/// ```
+/// use screen_snip::get_screen_snip;
+/// get_screen_snip("screenshot.png".to_string());
+/// ```
 pub fn get_screen_snip(save_path: String) {
     let viewport_builder = egui::ViewportBuilder::default()
         .with_title("Screenshot Viewport")
