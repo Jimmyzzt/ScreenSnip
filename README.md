@@ -1,2 +1,2 @@
 # ScreenSnip
-A tiny screeshot tool on Windows based on Rust.
+A tiny but elegent screeshot with selecting region tool with GUI based on EGUI.
